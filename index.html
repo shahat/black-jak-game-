@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="style.css" >
+<title> medo first project </title>
+    </head>
+    <body>
+
+    <div class="contanier">
+          <h1 class="project-header"> challenge 1 : your age in days</h1>
+          <div class ="flex-box-contanier-1"> 
+              <button class="bt btc " onclick="ageindays()" >click me</button>  
+              <button  class="bt btr" onclick="reset()" >reset </button> 
+            </div>
+          <div class ="flex-box-contanier-1"> 
+          <div id="flex-box-result"></div></div>
+      <!-- this for generate cate button  -->
+          <h2 class="title-1"> challenge  2 this for mekasa</h2>
+          <div class ="flex-box-contanier-1"> 
+                    <button class="bt btg"  onclick="generate_img()" >generate-img</button>  
+          </div>
+    <!-- this div for generated mekasa -->
+                  <div id="flex-box-img"></div>
+    <!-- this is for challenge 3 rock paper scessiers  -->
+                  <h2  class="title-1"> challenge 3 this is rock paper scissers challenge</h2>
+            <div id="RPS">
+              <div id="deleteall">
+                      <img id="rock" src="rock.PNG"  alt=" this is a  rock img" onclick="rpsgame(this)">
+                      <img id="paper" src="paper.PNG" onclick="rpsgame(this)" alt="this is a paper img ">
+                      <img id="scissors" src="sc.PNG" onclick="rpsgame(this)" alt="this is a scessiers img"></div>
+                    </div>
+<!-- this is the challenge 4-->
+<div class="flex-box-contanier-1">
+<form>
+      <select onchange="changebuttoncolor(this)">
+          <option value="random">Random</option>
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="reset">reset</option>
+        </select>
+    
+</form>
+
+<button class="bt bta "  >google</button>  
+<button class="bt btb "  >yahoo</button>  
+<button class="bt btc "  >linked in</button>  
+<button class="bt btd "  >facebook</button>  
+
+</div>
+<!-- this is the challenge 5  the current time -->
+<div class="flex-box-contanier-1">
+
+     <div id="current-time-container "></div>
+     </div>
+<!-- this is a black jack game  -->
+            <h2  class="title-1"> challenge 6 code the black jak game</h2>
+
+                  <div id="black-jak">
+
+                  <section class="youAndComputerSection">
+                      <h2>your score :
+                        <span id="your-result" >  0</span>
+                      </h2> 
+                    <div  id="yourjack"></div>
+                    </section>
+
+                  <section class="youAndComputerSection" > 
+                        <h2>computer score :
+                          <span id="computer result">  0</span> 
+                          </h2>
+                        <div id="dealerjack"></div>
+                    </section>
+
+            <section class="bottons-section" > 
+                    <button class=" butt Hit" onclick="blackJack()">Hit</button>
+
+                    <button class="butt Stand" onclick="computerJack()" >Stand</button>
+                    <button class="butt  Deal" >Deal</button>
+                
+            </section>
+            <section id="Result"><!-- this black jack result section  -->
+                 
+            </section>
+    </div><!-- black jack game  -->
+   </div>
+
+
+
+
+
+                        
+                <script  src="javascript1.js"></script>
+    </body>
+
+</html>
